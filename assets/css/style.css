@@ -3,8 +3,6 @@
 \*------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
-
-
 /*------------------------------------*\
   # COMMON STYLES
 \*------------------------------------*/
@@ -39,26 +37,37 @@ img {
     font-size: 16px;
     color: #fff;
     text-decoration: none;
+    transition: all 0.3s ease-in;
+}
+.button:hover {
+    transform: scale(1.05);
+    background: tomato;
 }
 .button i {
     margin-left: 10px;
 }
 
-
-
 /*------------------------------------*\
-  # BANNER SECTION
+  # HEADER
 \*------------------------------------*/
 header {
     background-color: #2D25A0;
 }
+
+/*------------------------------------*\
+  # BANNER SECTION
+\*------------------------------------*/
 .banner {
     padding: 85px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.banner .banner-image img{
+.banner .banner-image img {
     width: 556px;
+    transition: all 0.5s linear;
+}
+.banner .banner-image img:hover {
+    transform: scale(1.05);
 }
 
