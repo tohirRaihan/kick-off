@@ -117,3 +117,28 @@ header {
 .highlights .highlight-image {
     flex: 0 0 567px;
 }
+
+/*------------------------------------*\
+  # FOOTER SECTION
+\*------------------------------------*/
+.footer {
+    margin: 80px auto;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer ul.social-icons {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    column-gap: 15px;
+}
+.footer ul.social-icons li {
+    flex: 0 1 32px;
+}
+.footer .copyright p {
+    font-size: 18px;
+    color: #000;
+}
