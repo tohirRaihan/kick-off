@@ -41,7 +41,8 @@ p {
     color: #6C6C6C;
 }
 img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 .container {
     width: 1160px;
@@ -201,4 +202,91 @@ header {
 .footer .copyright p {
     font-size: 18px;
     color: #000;
+}
+
+/*------------------------------------*\
+  # MEDIA QUERY
+\*------------------------------------*/
+@media only screen and (max-width: 668px) {
+    /* common styles */
+    h1 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .container {
+        width: 100%;
+    }
+
+    /* header */
+    .banner {
+        padding: 50px 15px;
+        flex-direction: column;
+        /* align-items: center; */
+        gap: 50px;
+    }
+    .banner .banner-image {
+        flex: 0 0 auto;
+    }
+
+    /* players section */
+    .players {
+        padding: 50px 15px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* highlights section */
+    .highlights {
+        flex-direction: column;
+        padding: 15px 15px 50px;
+        gap: 30px;
+    }
+    .highlights .highlight-image {
+        flex: 0 0 auto;
+        order: 2;
+    }
+    .highlights .highlights-info {
+        order: 1;
+    }
+
+    /* about us section */
+    #about-us {
+        padding: 50px 15px;
+    }
+    .about-us {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .about-us .about-us-image {
+        flex: 0 0 auto;
+    }
+
+    /* newsletter */
+    .newsletter {
+        text-align: center;
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px 15px;
+        margin-top: 50px;
+        border-radius: 0px;
+    }
+    .newsletter .newsletter-title {
+        font-size: 28px;
+    }
+    .newsletter .newsletter-form form {
+        flex-direction: column;
+    }
+    .newsletter .newsletter-form input {
+        padding: 10px 20px;
+    }
+
+    /* footer */
+    .footer {
+        margin: 50px auto;
+        width: 90%;
+        display: flex;
+    }
 }
