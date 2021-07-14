@@ -40,7 +40,7 @@ p {
     color: #6C6C6C;
 }
 img {
-    width: 100%;
+    max-width: 100%;
 }
 .container {
     width: 1160px;
@@ -82,11 +82,11 @@ header {
     align-items: center;
     gap: 100px;
 }
-.banner .banner-image img {
-    width: 556px;
+.banner .banner-image {
+    flex: 0 0 556px;
     transition: all 0.5s linear;
 }
-.banner .banner-image img:hover {
+.banner .banner-image:hover {
     transform: scale(1.05);
 }
 
@@ -94,7 +94,7 @@ header {
   # PLAYERS SECTION
 \*------------------------------------*/
 .players {
-    padding: 70px 50px;
+    padding: 80px 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -102,4 +102,18 @@ header {
 .players .player {
     padding: 15px 15px 30px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+/*------------------------------------*\
+  # HIGHLIGHTS SECTION
+\*------------------------------------*/
+.highlights {
+    padding: 80px 0;
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.highlights .highlight-image {
+    flex: 0 0 567px;
 }
